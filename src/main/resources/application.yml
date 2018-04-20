@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nizaamudien-abbas/{application}-config.git
+#          repos:
+#            {application}:
+#              pattern: {application}
+#              uri: file://${HOME}/work/development/{application}-config
